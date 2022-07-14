@@ -8,9 +8,13 @@ sources:
     tables:
       - name: disney
         description: Database of Disney's streaming tv shows and movies.
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: type
+            description: Type of media, either "SHOW" or "MOVIE"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["SHOW", "MOVIE"]
 
       - name: hbo
         description: Database of HBO's streaming tv shows and movies.
@@ -20,21 +24,33 @@ sources:
 
       - name: hulu
         description: Database of Hulu's streaming tv shows and movies.
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: type
+            description: Type of media, either "SHOW" or "MOVIE"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["SHOW", "MOVIE"]
 
       - name: netflix
         description: Database of Netflix's streaming tv shows and movies.
-        tests: 
-          - unique
-          - not_null
+        columns:
+          - name: type
+            description: Type of media, either "SHOW" or "MOVIE"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["SHOW", "MOVIE"]
         
       - name: prime
         description: Database of Amazon Prime's streaming tv shows and movies.
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: type
+            description: Type of media, either "SHOW" or "MOVIE"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["SHOW", "MOVIE"]
 
 
     #   - name: type
