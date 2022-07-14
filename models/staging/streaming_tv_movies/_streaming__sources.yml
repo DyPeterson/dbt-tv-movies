@@ -35,3 +35,11 @@ sources:
         tests:
           - unique
           - not_null
+
+
+    #   - name: type
+    #     description: Type of media, either "SHOW" or "MOVIE"
+    #     tests:
+    #       - not_null
+    #       - accepted_values:
+    #           values: ['SHOW', 'MOVIE']

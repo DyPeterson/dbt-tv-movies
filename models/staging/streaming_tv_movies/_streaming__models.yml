@@ -20,15 +20,6 @@ models:
         - unique
         - not_null
 
-  - name: stg_movies__hbo
-    description: Staged movie data for HBO's streaming movies
-    columns:
-      - name: id
-        description: Primary key for stg_movies__hbo
-        tests:
-        - unique
-        - not_null
-
   - name: stg_movies__hulu
     description: Staged movie data for Hulu's streaming movies
     columns:
