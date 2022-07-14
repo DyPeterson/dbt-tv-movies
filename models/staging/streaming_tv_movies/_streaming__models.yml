@@ -1,0 +1,111 @@
+version: 2
+
+models:
+# Movies:
+  - name: stg_movies__disney
+    description: Staged movie data for Disney's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_movies__disney
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_movies__hbo
+    description: Staged movie data for Disney's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_movies__hbo
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_movies__hbo
+    description: Staged movie data for HBO's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_movies__hbo
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_movies__hulu
+    description: Staged movie data for Hulu's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_movies__hulu
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_movies__netflix
+    description: Staged movie data for Netflix's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_movies__netflix
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_movies__prime
+    description: Staged movie data for Amazon Prime's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_movies__prime
+        tests:
+        - unique
+        - not_null
+# TV
+  - name: stg_tv__disney
+    description: Staged tv data for Disney's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_tv__disney
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_tv__hbo
+    description: Staged tv data for HBO's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_tv__hbo
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_tv__hulu
+    description: Staged tv data for Hulu's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_tv__hulu
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_tv__netflix
+    description: Staged tv data for Netflix's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_tv__netflix
+        tests:
+        - unique
+        - not_null
+
+  - name: stg_tv__prime
+    description: Staged tv data for Amazon Prime's streaming movies
+    columns:
+      - name: id
+        description: Primary key for stg_tv__prime
+        tests:
+        - unique
+        - not_null
+        
+        
+        
+        
+        
+        
+        
+        
+                

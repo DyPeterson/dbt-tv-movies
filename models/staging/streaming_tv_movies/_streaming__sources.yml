@@ -1,0 +1,37 @@
+version: 2
+# Disney HBO Hulu Netflix Prime
+sources:
+  - name: tv_movies
+    description: Collection of streaming tv shows and movies on multiple streaming platforms
+    database: tv_movies
+    schema: tv_movies
+    tables:
+      - name: disney
+        description: Database of Disney's streaming tv shows and movies.
+        tests:
+          - unique
+          - not_null
+
+      - name: hbo
+        description: Database of HBO's streaming tv shows and movies.
+        tests:
+          - unique
+          - not_null
+
+      - name: hulu
+        description: Database of Hulu's streaming tv shows and movies.
+        tests:
+          - unique
+          - not_null
+
+      - name: netflix
+        description: Database of Netflix's streaming tv shows and movies.
+        tests: 
+          - unique
+          - not_null
+        
+      - name: prime
+        description: Database of Amazon Prime's streaming tv shows and movies.
+        tests:
+          - unique
+          - not_null
