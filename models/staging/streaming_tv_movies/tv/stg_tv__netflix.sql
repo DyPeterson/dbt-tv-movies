@@ -1,0 +1,1 @@
+select * from {{ source('tv_movies', 'netflix_titles')}} where type = "SHOW"
