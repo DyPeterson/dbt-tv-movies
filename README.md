@@ -19,6 +19,8 @@ A independent project to demonstrate what I've learned with a week-long explorat
 
 - [DBT(CLI and online IDE)](https://www.getdbt.com/)
 
+- [Google BigQuery](https://cloud.google.com/bigquery)
+
 ### Dataset:
 
 Combination of all 5 of these CSVs:
@@ -72,31 +74,15 @@ Configurations:
 
  - Full address: `dpeterson.tv_movies`
 
+##  Details:
 
-##  Useful Links:
+This project uses DBT to create models based on 5 streaming services catalog of movies & TV shows. DBT use SQL statements to create models based of a dataset hosted in a warehouse, I used BigQuery for this project. I tried to create a model that would be similar to something you may see in a production environment. 
 
-###  Link to project on GitHub:
+### DBT DAG:
 
-[GitHub](https://github.com/DyPeterson/monkeypox)
+![dbt dag](./img/dbt-dag.png)
 
-
-### Dataset:
-
-Combination of all 5 of these CSVs:
-
-[Hulu](https://www.kaggle.com/datasets/victorsoeiro/hulu-tv-shows-and-movies)
-
-[HBO Max](https://www.kaggle.com/datasets/victorsoeiro/hbo-max-tv-shows-and-movies)
-
-[Amazon Prime](https://www.kaggle.com/datasets/victorsoeiro/amazon-prime-tv-shows-and-movies)
-
-[Disney+](https://www.kaggle.com/datasets/victorsoeiro/disney-tv-shows-and-movies)
-
-[Netflix](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies)
-
-[All 5 CSVs Cleaned](https://github.com/DyPeterson/streaming_datasets)
-
-#### File Tree:
+### File Tree:
 ```
 tv-movies
 ├─ .gitignore
@@ -151,3 +137,46 @@ tv-movies
    └─ .gitkeep
 
 ```
+
+##  Useful Links:
+
+###  Link to project on GitHub:
+
+[GitHub](https://github.com/DyPeterson/monkeypox)
+
+### Dataset:
+
+Combination of all 5 of these CSVs:
+
+[Hulu](https://www.kaggle.com/datasets/victorsoeiro/hulu-tv-shows-and-movies)
+
+[HBO Max](https://www.kaggle.com/datasets/victorsoeiro/hbo-max-tv-shows-and-movies)
+
+[Amazon Prime](https://www.kaggle.com/datasets/victorsoeiro/amazon-prime-tv-shows-and-movies)
+
+[Disney+](https://www.kaggle.com/datasets/victorsoeiro/disney-tv-shows-and-movies)
+
+[Netflix](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies)
+
+[All 5 CSVs Cleaned](https://github.com/DyPeterson/streaming_datasets)
+
+
+##  Known Bugs:
+
+No known bugs at this time.
+
+## Future Features:
+
+- Add a column to each data set signifying with streaming service(s) they are hosted on and use that to create one large dataset.
+
+- Expand the project with many custom tests
+
+- Expand the models to more mimic a production environment
+
+###  Copyright 2022
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
