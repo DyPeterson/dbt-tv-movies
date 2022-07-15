@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 with disney_titles as (
     select * from {{ source('tv_movies', 'disney_titles')}}
 ),
