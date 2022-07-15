@@ -3,26 +3,30 @@ version: 2
 sources:
   - name: tv_movies
     description: Collection of streaming tv shows and movies on multiple streaming platforms
-    database: tv_movies
+    database: dpeterson
     schema: tv_movies
     tables:
-      - name: disney
+      - name: disney_titles
         description: Database of Disney's streaming tv shows and movies.
         columns:
           - name: type
-            description: Type of media, either "SHOW" or "MOVIE"
+            description: '{{ doc("type") }}'
             tests:
               - not_null
               - accepted_values:
                   values: ["SHOW", "MOVIE"]
 
-      - name: hbo
+      - name: hbo_titles
         description: Database of HBO's streaming tv shows and movies.
-        tests:
-          - unique
-          - not_null
+        columns:
+          - name: type
+            description: '{{ doc("type") }}'
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["SHOW", "MOVIE"]
 
-      - name: hulu
+      - name: hulu_titles
         description: Database of Hulu's streaming tv shows and movies.
         columns:
           - name: type
@@ -32,21 +36,21 @@ sources:
               - accepted_values:
                   values: ["SHOW", "MOVIE"]
 
-      - name: netflix
+      - name: netflix_titles
         description: Database of Netflix's streaming tv shows and movies.
         columns:
           - name: type
-            description: Type of media, either "SHOW" or "MOVIE"
+            description: '{{ doc("type") }}'
             tests:
               - not_null
               - accepted_values:
                   values: ["SHOW", "MOVIE"]
         
-      - name: prime
+      - name: prime_titles
         description: Database of Amazon Prime's streaming tv shows and movies.
         columns:
           - name: type
-            description: Type of media, either "SHOW" or "MOVIE"
+            description: '{{ doc("type") }}'
             tests:
               - not_null
               - accepted_values:
