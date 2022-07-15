@@ -1,0 +1,1 @@
+select * from {{ source('tv_movies', 'hbo_titles')}} where type = "MOVIE"
