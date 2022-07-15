@@ -1,12 +1,2 @@
-Welcome to your new dbt project!
+# DBT Streaming Services: TV and Movies
 
-### Using the starter project
-
-DBT CODE REVIEW PROJECT
-
-|EXAMPLE      |TABLE          |
-|-------------|---------------|
-|1            |2              |
-|2            |4              |
-|3            |8              |
-|4            |16             |
